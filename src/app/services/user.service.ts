@@ -14,8 +14,8 @@ export class UserService {
   private baseUrl = environment.serverUrl + 'customers';
   constructor(private http: HttpClient) { }
 
-  login(login: any): Observable<Object> {
-    return this.http.post(`${this.baseUrl}/login`, {
+    login(login: any): Observable<Object> {
+    return this.http.post(`${environment.serverUrl}/login`, {
       email: login.Email,
       password: login.Password,
     });
