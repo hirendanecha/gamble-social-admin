@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "healing-tube-admin": {
+    "gamble-social-admin": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/healing-tube-admin",
+            "outputPath": "dist/gamble-social-admin",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -153,13 +153,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "healing-tube-admin:build:production"
+              "browserTarget": "gamble-social-admin:build:production"
             },
             "development": {
-              "browserTarget": "healing-tube-admin:build:development"
+              "browserTarget": "gamble-social-admin:build:development"
             },
             "test": {
-              "browserTarget": "healing-tube-admin:build:test"
+              "browserTarget": "gamble-social-admin:build:test"
             }
           },
           "defaultConfiguration": "production"
@@ -167,7 +167,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "healing-tube-admin:build"
+            "browserTarget": "gamble-social-admin:build"
           }
         },
         "test": {
